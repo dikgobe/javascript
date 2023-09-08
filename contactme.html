@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script defer src="index.js"></script>
+    </head>
+    <body>
+        <nav role="navigation" aria-label="Main Menu">          <!--Creating a website navigation-->
+            <label class="logo">Dikgobe James</label>         <!--company logo-->
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactme.html">Contacts</a></li>
+                <li><a href="aboutme.html">About Us</a></li>
+                <li><a href="ourServices.html">Our Services</a></li>
+            </ul>
+        </nav>
+        <br>
+        <div class="contact-me">    <!--section for contacts-->
+            <a class="mail-me" href="mailto:djmolepo@gmail.com"> Click Here to sent us an email</a>
+            <a class="call-me" href="tel: +27 607 482 828"> Click Here to give us a call</a>
+        </div>
+        <div class="commentBox">
+            <h2>Let Us Call You</h2>
+            <form id="form" action="#">         <!--creating a form-->
+                <input id="fullName" name="firstName" placeholder="Full Name" type="text"> <!--input for full names-->
+                <span class="errorMessage" id="nameError"></span>
+                <input id="phone" name="phone" placeholder="Phone Number" type="tel">       <!--input for phone numbers-->
+                <span class="errorMessage" id="phoneError"></span>
+                <input id="email" name="email" placeholder="example@e-mail.com"  >          <!--input for an email-->
+                <span class="errorMessage" id="emailError"></span>                          
+                <textarea id="comment" name="comment" placeholder="Please Type your Massage"></textarea>    <!--text area for a comment section-->
+                <span class="errorMessage" id="commentError"></span>
+                <button type="submit" id="submitButton">Submit</button>         <!--a button for submission-->
+            </form>
+        </div>
+    </body>
+</html>
